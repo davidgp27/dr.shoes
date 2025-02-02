@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dr.Shoes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+        <style>
+         body {
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 80px;
+        overflow-x: hidden;
+        }
+        .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        }
+        .logo-img{
+            max-height: 100px;
+        }
+        .social-icons {
+            color: white;
+            margin-right: 20px;
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        #icons img{
+            border-radius: 15px;
+            max-height: 30px;
+        }
+        .footer p {
+            margin-bottom: 4px;
+        }
+        </style>
+      </head>
+<body>
+        <div class="container-fluid bg-success text-white d-flex align-items-center">
+            <a href="index.html" class="navbar-brand"> <img src="images/logo3.png" alt="logo dr.shoes" class="logo-img"></a>
+            <h2>Dr.Shoes</h2>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link text-white active">Datos del cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#1" class="nav-link text-dark disabled">Información adicional</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark disabled">Pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark disabled">Datos de pago</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container mt-3" id="1">
+            <h2>Alta de clientes</h2>
+            <form action="ejerciciobootstrap2.html" method="get" class="was-validated">
+                <!-- Nombre -->
+                 <div>
+                    <label for="uname" class="form-label">Nombre (3-20 letras):</label>
+                    <input type="text" name="uname" required id="uname" placeholder="Enter your name" class="form-control" pattern="[a-zA-Z0-9]{3,20}">
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, complete el nombre correctamente</div>
+                </div>
+    
+                <!-- Correo -->
+                 <div>
+                    <label for="password" class="form-label">Correo Electrónico</label>
+                    <input type="email" name="email" required id="email" placeholder="Enter email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" >
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, complete el correo correctamente</div>
+                </div>
+                <!-- Teléfono (9 números) -->
+                 <div>
+                    <label for="uname" class="form-label">Teléfono (9 números)</label>
+                    <input type="tel" name="tel" required id="tel" placeholder="Phone number" class="form-control" pattern="[0-9]{9,9}">
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, complete el teléfono correctamente.</div>
+                </div>
+                <button type="submit" class="btn btn-success">Siguente</button>
+            </form>
+        </div>
+</body>
+<footer class="footer">
+    <div class="container-fluid text-white bg-dark" >
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=es_ES" class="text-white" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en&mx=2" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-2">
+                <div id="icons">
+                    <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/appstore.png" alt="appstore"></a>
+                    <a href="https://play.google.com/store/games?hl=es_419&pli=1" target="_blank"><img src="images/playstore.png" alt="playstore"></a>
+                </div>
+                <br>
+                <p>©2025 Dr.Shoes. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-lg-3 mt-2">
+                <h3>Contacto</h3>
+                <p>Correo electrónico: info@drshoes.com</p>
+                <p>Teléfono: 965-21-45-85</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
