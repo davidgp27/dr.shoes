@@ -1,0 +1,33 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+    }
+    .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    }
+    .logo-img{
+        max-height: 100px;
+    }
+    .social-icons {
+        color: white;
+        margin-right: 20px;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    #icons img{
+        border-radius: 15px;
+        max-height: 30px;
+    }
+    .footer p {
+        margin-bottom: 4px;
+
+    }.form-check-input:checked {
+        background-color: green;
+        border-color: green;
+    }
